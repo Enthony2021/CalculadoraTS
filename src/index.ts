@@ -12,7 +12,7 @@ class Calculadora {
     this.pressionaEnter();
   }
 
-  pressionaEnter() {
+  pressionaEnter(): void {
     if (this.display) {
       this.display.addEventListener("keyup", (e) => {
         if (e.keyCode === 13) {
@@ -22,7 +22,7 @@ class Calculadora {
     }
   }
 
-  realizaConta() {
+  realizaConta(): void {
     if (this.display) {
       let conta: string = this.display.value;
 
@@ -41,19 +41,19 @@ class Calculadora {
     }
   }
 
-  clearDisplay() {
+  clearDisplay(): void {
     if (this.display) {
       this.display.value = "";
     }
   }
-
-  apagaUm() {
+  
+  apagaUm(): void {
     if (this.display) {
       this.display.value = this.display.value.slice(0, -1);
     }
   }
 
-  cliqueBotoes() {
+  cliqueBotoes(): void {
     document.addEventListener("click", (e: MouseEvent) => {
       const el: HTMLButtonElement | null = e.target as HTMLButtonElement;
       
@@ -77,7 +77,7 @@ class Calculadora {
     });
   }
 
-  btnParaDisplay(valor: string) {
+  btnParaDisplay(valor: string): void {
     if (this.display) {
       this.display.value += valor;
       this.display.focus();
