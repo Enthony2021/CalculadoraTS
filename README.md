@@ -8,6 +8,8 @@ Calculadora feita em TS/JS para estudo de manipulação do DOM e tipos em elemen
 ## Tecnologias usadas
 * Typescript
 * Node
+* html
+* css
 
 ## Instalação e Execução do Projeto
 1. Faça o download ou cópia deste repositório.
