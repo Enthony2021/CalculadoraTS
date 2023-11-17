@@ -65,7 +65,12 @@ class Calculadora {
     btnParaDisplay(valor) {
         if (this.display) {
             this.display.value += valor;
-            this.display.focus();
+            if (window.innerWidth < 800) {
+                this.display.blur();
+            }
+            else {
+                this.display.focus();
+            }
         }
     }
 }
