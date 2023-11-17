@@ -1,0 +1,26 @@
+@media (max-width: 450px) {
+    body {
+        width: 100vw;
+    }
+
+    .container {
+        width: 280px;
+        height: px;
+        height: 450px;
+        justify-content: center;
+    }
+
+    .display {
+        font-size: 1.6em;
+        height: 2.3rem;
+    }
+
+    .calculadora {
+        width: 260px;
+        height: 400px;
+    }
+
+    .btn {
+        height: 60px;
+    }
+}
