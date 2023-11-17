@@ -80,7 +80,9 @@ class Calculadora {
   btnParaDisplay(valor: string): void {
     if (this.display) {
       this.display.value += valor;
-      this.display.focus();
+      if(window.innerWidth > 450) {
+        this.display.focus();
+      }
     }
   }
 }
