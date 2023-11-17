@@ -8,7 +8,8 @@
     "dev": "tsc -w",
     "build-js": "tsc",
     "start:shell": "xdg-open ./index.html",
-    "start:bash": "start ./index.html"
+    "start:bash": "start ./index.html",
+    "start": "npm i && npm run build-js"
   },
   "author": "Enthony Stevie",
   "license": "ISC",
